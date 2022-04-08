@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-color: #191919;
+    --white-color: #ffffff;
+    --purple-color: rgb(117, 41, 149);
+    --purplelight-color: rgb(169, 83, 206);
+    --aqua-color: aqua;
+    --gray-color: gray;
+    --ligh-color: #F3F3F3;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.titulo-cuidar h1 {
+    color: rgb(117, 41, 149);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px grey;
+    font-size: 35px;
+    text-align: center;
+}
+
+.contenedor {
+    margin: 0 auto;
+}
+
+.service1 {
+    background-image: url(../img/fondo.jpg);
+    position: relative;
+    max-width: 500px;
+    max-height: 350px;
+    margin: 0;
+    width: 90%;
+    height: 90%;
+    display: flex;
+ 
+    align-items: center;
+    border-radius: 10%;
+    box-shadow: 4px 3px 2px rgba(128, 128, 128, 0.806);
+}
+
+.service1 img {
+    object-fit: cover;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: visible;
+}
+
+.service1:hover img {
+    left: 0;
+    opacity: 1;
+    visibility: hidden;
+
+}
+
+.text-service1 {
+    position: relative;
+    width: 100%;
+    left: 20%;
+    padding: 20px 20px 20px 20px;
+    opacity: 0;
+    margin-right: 1em;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.service1:hover .text-service1 {
+    width: 100%;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+
+}
+
+h3 {
+    font-weight: bold;
+}
+
+
+/* ::::::::::::::::::::::: MEDIA QUERIE: Celular ::::::::::::::::::::::::::::::: */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .service1 {
+        background-image: url(../img/fondo.jpg);
+        position: relative;
+        width: 350px;
+        height: 200px;
+        margin: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 10%;
+        box-shadow: 4px 7px 2px rgba(128, 128, 128, 0.806);
+    }
+
+    .text-service1 {
+        width: 100%;
+        height: 200px;
+        padding: -500px 20px 20px 20px;
+        opacity: 0;
+        margin-right: 1em;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    .text-service1 h3 {
+        font-size: 15px;
+    }
+
+    .text-service1 p {
+        font-size: 10px;
+    }
+
+    .text-service1 button {
+        font-size: 10px;
+    }
+
+    .contenedor {
+        margin: 0 0.5rem;
+    }
+}
+
+/* ::::::::::::::::::::::: MEDIA QUERIE: celular a tableta ::::::::::::::::::::::::::::::: */
+@media (min-width: 481px) and (max-width: 767px) {
+    .contenedor {
+        margin: 0 4rem;
+    }
+
+    .service1 {
+        background-image: url(../img/fondo.jpg);
+        position: relative;
+        width: 550px;
+        height: 300px;
+        margin: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 10%;
+        box-shadow: 4px 7px 2px rgba(128, 128, 128, 0.806);
+    }
+}
+
+/* ::::::::::::::::::::::: MEDIA QUERIE: tableta ::::::::::::::::::::::::::::::: */
+@media (min-width: 768px) {
+    .service1 {
+        background-image: url(../img/fondo.jpg);
+        position: relative;
+        width: 550px;
+        height: 300px;
+        margin: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 10%;
+        box-shadow: 4px 7px 2px rgba(128, 128, 128, 0.806);
+    }
+
+    .text-service1 {
+        width: 100%;
+        height: 200px;
+        padding: -500px 20px 20px 20px;
+        opacity: 0;
+        margin-right: 1em;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    .text-service1 h3 {
+        font-size: 30px;
+    }
+
+    .text-service1 p {
+        font-size: 15px;
+    }
+
+    .text-service1 button {
+        font-size: 20px;
+    }
+
+    .contenedor {
+        margin: 0 5rem;
+    }
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1028px) {
+    .service1 {
+        background-image: url(../img/fondo.jpg);
+        position: relative;
+        width: 416px;
+        height: 280px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 10%;
+        box-shadow: 4px 7px 2px rgba(128, 128, 128, 0.806);
+    }
+
+    .text-service1 {
+        width: 100%;
+        height: 240px;
+        padding: -500px 20px 20px 20px;
+        opacity: 0;
+        margin-right: 1em;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    .text-service1 h3 {
+        font-size: 25px;
+    }
+
+    .text-service1 p {
+        font-size: 15px;
+    }
+
+    .text-service1 button {
+        font-size: 15px;
+    }
+
+    .contenedor {
+        margin: 0 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .service1 {
+        background-image: url(../img/fondo.jpg);
+        position: relative;
+        width: 500px;
+        height: 350px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 10%;
+        box-shadow: 4px 7px 2px rgba(128, 128, 128, 0.806);
+    }
+
+    .text-service1 {
+        position: relative;
+        width: 100%;
+        left: 20%;
+        padding: 20px 20px 20px 20px;
+        opacity: 0;
+        margin-right: 1em;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    .text-service1 h3 {
+        font-size: 25px;
+    }
+
+    .text-service1 p {
+        font-size: 15px;
+    }
+
+    .text-service1 button {
+        font-size: 15px;
+    }
+
+    .contenedor {
+        margin: 0 5rem;
+    }
+
+}

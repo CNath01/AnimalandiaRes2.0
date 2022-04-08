@@ -1,0 +1,104 @@
+main{
+    background-image: url(../img/contactofondo.webp);
+    transform: scaleX(-1);
+    background-size: cover;
+    background-position: right;
+}
+
+.texto span{
+    font-weight: bolder;
+}
+
+.texto{
+    display: flex;
+    flex-direction: row;
+}
+.como-icon{
+    color: blueviolet;
+    font-size: 45px;
+    border-radius: 190px;
+}
+
+
+.contenido{
+    background-color: rgba(162, 162, 243, 0.333);
+    transform: scaleX(-1);
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 5rem;
+}
+
+.contenido iframe{
+    border-radius: 100%;
+    width: 100%;
+    max-width: 350px;
+    height: 380px;
+}
+.titulo-como h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(173, 172, 172);
+    color: rgb(117, 41, 149);
+}
+
+.espacio i{
+    margin-right: 1rem;
+}
+
+.espacio{
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+/* ::::::::::::::::::::::: MEDIA QUERIE: Celular ::::::::::::::::::::::::::::::: */
+
+@media only screen and (min-device-width : 300px) and (max-device-width : 767px) {
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1rem;
+        width: 100%;
+    }
+
+    .texto{
+        flex-direction: column;
+    }
+
+    .espacio{
+        max-width: auto;
+    }
+
+    main{
+        background-image: url(../img/contactofondo.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+}
+
+
+/* ::::::::::::::::::::::: MEDIA QUERIE: tableta ::::::::::::::::::::::::::::::: */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .contenido{
+        flex-direction: row;
+        padding: 3rem 1rem;
+    }
+
+    .texto{
+        flex-direction: column;
+    }
+
+    .espacio{
+        max-width: auto;
+    }
+
+    main{
+        background-image: url(../img/contactofondo.webp);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+
+}
